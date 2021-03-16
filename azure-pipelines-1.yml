@@ -26,6 +26,8 @@ steps:
     command: 'login'
 - task: Docker@2
   inputs:
+    containerRegistry: 'Docker1'
+    repository: 'Devpractice/AzureDockerfile'
     command: 'buildAndPush'
     Dockerfile: '**/AzureDockerfile'
     
